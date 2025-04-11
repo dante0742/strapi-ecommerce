@@ -1,10 +1,8 @@
-// config/database.js
-
 module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      connectionString: env('DATABASE_URL'), // This will come from Render
+      connectionString: env('DATABASE_URL'),
       ssl: env.bool('DATABASE_SSL', true) && {
         rejectUnauthorized: false,
       },
@@ -12,12 +10,3 @@ module.exports = ({ env }) => ({
     debug: false,
   },
 });
-
-  return {
-    connection: {
-      client,
-      ...connections[client],
-      acquireConnectionTimeout: env.int('DATABASE_CONNECTION_TIMEOUT', 60000),
-    },
-  };
-};
