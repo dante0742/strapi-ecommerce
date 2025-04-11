@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendors",
+  "info": {
+    "singularName": "vendor",
+    "pluralName": "vendors",
+    "displayName": "Vendor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "business_name": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "vendor"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "vendor"
+    },
+    "wallet_balance": {
+      "type": "decimal"
+    }
+  }
+}

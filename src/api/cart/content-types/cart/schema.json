@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "singularName": "cart",
+    "pluralName": "carts",
+    "displayName": "Cart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "cart"
+    },
+    "total_price": {
+      "type": "decimal"
+    },
+    "cart_status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "checked_out"
+      ],
+      "default": "active"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.cart-item"
+    }
+  }
+}

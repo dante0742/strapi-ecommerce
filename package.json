@@ -16,7 +16,10 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^5.0.2",
     "@strapi/plugin-cloud": "5.12.3",
+    "@strapi/plugin-graphql": "^5.12.3",
+    "@strapi/plugin-seo": "^2.0.8",
     "@strapi/plugin-users-permissions": "5.12.3",
     "@strapi/strapi": "5.12.3",
     "fs-extra": "^10.0.0",
@@ -25,9 +28,9 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "strapi-plugin-slugify": "^2.3.8",
     "styled-components": "^6.0.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"

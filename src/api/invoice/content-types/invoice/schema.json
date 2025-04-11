@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoices",
+  "info": {
+    "singularName": "invoice",
+    "pluralName": "invoices",
+    "displayName": "Invoice"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pdf": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "issued_at": {
+      "type": "datetime",
+      "required": false
+    }
+  }
+}

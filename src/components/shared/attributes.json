@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_attributes",
+  "info": {
+    "displayName": "attributes",
+    "icon": "connector",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

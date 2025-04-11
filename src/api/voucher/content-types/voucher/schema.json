@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vouchers",
+  "info": {
+    "singularName": "voucher",
+    "pluralName": "vouchers",
+    "displayName": "Voucher"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "code": {
+      "type": "string",
+      "unique": true
+    },
+    "discount_type": {
+      "type": "enumeration",
+      "enum": [
+        "percentage",
+        "fixed"
+      ]
+    },
+    "discount_value": {
+      "type": "decimal"
+    },
+    "valid_from": {
+      "type": "datetime",
+      "required": true
+    },
+    "valid_to": {
+      "type": "datetime"
+    },
+    "min_order_value": {
+      "type": "decimal"
+    },
+    "usage_limit": {
+      "type": "integer"
+    },
+    "used_count": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
