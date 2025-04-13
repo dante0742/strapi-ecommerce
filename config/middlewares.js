@@ -1,7 +1,8 @@
 module.exports = [
-  'strapi::logger',
   'strapi::errors',
-   config: {
+  {
+    name: 'strapi::cors',
+    config: {
       origin: ['http://localhost:5500', 'https://localhost:5501'],
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       headers: '*',
@@ -9,8 +10,8 @@ module.exports = [
     },
   },
   'strapi::security',
-  'strapi::cors',
   'strapi::poweredBy',
+  'strapi::logger',
   'strapi::query',
   'strapi::body',
   'strapi::session',
