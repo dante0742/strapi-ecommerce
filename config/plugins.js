@@ -13,8 +13,7 @@ module.exports = ({ env }) => ({
   },
   email: {
     config: {
-      provider: "nodemailer",
-      providerOptions: {
+        providerOptions: {
         host: env("SMTP_HOST"),
         port: env("SMTP_PORT"),
         auth: {
