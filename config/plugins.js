@@ -11,7 +11,6 @@ module.exports = ({ env }) => ({
   },
   email: {
     config: {
-      provider: "mailtrap",
       providerOptions: {
         user: env("MAILTRAP_USER"),
         password: env("MAILTRAP_PASS"),
