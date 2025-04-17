@@ -1,5 +1,3 @@
-const path = require("path");
-
 module.exports = ({ env }) => ({
   graphql: {
     enabled: true,
@@ -14,9 +12,9 @@ module.exports = ({ env }) => ({
   email: {
     config: {
       provider: "nodemailer",
-        providerOptions: {
-        host: env("SMTP_HOST"),
-        port: env("SMTP_PORT"),
+      providerOptions: {
+        host: env("SMTP_HOST", "sandbox.smtp.mailtrap.io"),
+        port: env.int("SMTP_PORT", 587),
         auth: {
           user: env("SMTP_USERNAME"),
           pass: env("SMTP_PASSWORD"),
