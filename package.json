@@ -18,7 +18,7 @@
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^5.0.2",
     "@faker-js/faker": "^9.7.0",
-    "@strapi/plugin-cloud": "5.12.3",
+    "@strapi/plugin-cloud": "5.16.1",
     "@strapi/plugin-graphql": "^5.12.3",
     "@strapi/plugin-seo": "^2.0.8",
     "@strapi/plugin-users-permissions": "5.12.3",
