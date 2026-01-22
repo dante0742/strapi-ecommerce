@@ -16,13 +16,13 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
-    "@_sh/strapi-plugin-ckeditor": "^5.0.2",
+    "@_sh/strapi-plugin-ckeditor": "^6.0.0",
     "@faker-js/faker": "^9.7.0",
     "@strapi/plugin-cloud": "5.12.3",
     "@strapi/plugin-graphql": "^5.12.3",
     "@strapi/plugin-seo": "^2.0.8",
     "@strapi/plugin-users-permissions": "5.12.3",
-    "@strapi/strapi": "5.12.3",
+    "@strapi/strapi": "5.33.4",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
     "nodemailer": "^6.10.1",
